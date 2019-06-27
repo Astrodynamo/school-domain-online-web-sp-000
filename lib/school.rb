@@ -16,7 +16,7 @@ class School
   end
   
   def sort
-    @roster.map {|grade, student_array| @roster[grade] = student_array.sort}
+    @roster.each {|grade, student_array| @roster[grade] = student_array.sort}
   end
   
 end
